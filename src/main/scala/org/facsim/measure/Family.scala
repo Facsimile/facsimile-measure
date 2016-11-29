@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.{assertNonNull, requireNonNull}
+import org.facsim.util.{assertNonNull, requireNonNull}
 import scala.collection.immutable.HashMap
 
 /**

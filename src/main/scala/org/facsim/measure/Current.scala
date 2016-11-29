@@ -33,8 +33,6 @@
  */
 package org.facsim.measure
 
-import org.facsim.LibResource
-
 /**
  * ''[[http://en.wikipedia.org/wiki/Electric_current Electric current]]'' physical quantity type.
  *
@@ -81,7 +79,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Amperes = new Units(SIConverter, LibResource("measure.Current.Ampere.sym"))
+  val Amperes = new Units(SIConverter, LibResource("Current.Ampere.sym"))
 
   /**
    * Physical quantity family for current measurements.

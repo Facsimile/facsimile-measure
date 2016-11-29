@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.{requireNonNull, requireValid, LibResource}
+import org.facsim.util.{requireNonNull, requireValid}
 
 /**
  * ''[[http://en.wikipedia.org/wiki/Angle Plane angle]]'' physical quantity type.
@@ -126,7 +126,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Degrees = new Units(new LinearScaleConverter(τValue / 360.0), LibResource("measure.Angle.Degree.sym"))
+  val Degrees = new Units(new LinearScaleConverter(τValue / 360.0), LibResource("Angle.Degree.sym"))
 
   /**
    * Units for angles measured in ''[[http://en.wikipedia.org/wiki/Gradian gradians]]''.
@@ -135,7 +135,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Gradians = new Units(new LinearScaleConverter(τValue / 400.0), LibResource("measure.Angle.Gradian.sym"))
+  val Gradians = new Units(new LinearScaleConverter(τValue / 400.0), LibResource("Angle.Gradian.sym"))
 
   /**
    * Units for angles measured in ''[[http://en.wikipedia.org/wiki/Radian radians]]''.
@@ -150,7 +150,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Radians = new Units(SIConverter, LibResource("measure.Angle.Radian.sym"))
+  val Radians = new Units(SIConverter, LibResource("Angle.Radian.sym"))
 
   /**
    * Units for angles measured in ''[[http://en.wikipedia.org/wiki/Turn_(geometry) turns]]'' (also known as ''cycles''
@@ -160,7 +160,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Turns = new Units(new LinearScaleConverter(τValue), LibResource("measure.Angle.Turn.sym"))
+  val Turns = new Units(new LinearScaleConverter(τValue), LibResource("Angle.Turn.sym"))
 
   /**
    * Physical quantity family for plane angle measurements.

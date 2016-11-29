@@ -33,8 +33,6 @@
  */
 package org.facsim.measure
 
-import org.facsim.LibResource
-
 /**
  * ''[[http://en.wikipedia.org/wiki/Luminous_intensity Luminous intensity]]'' physical quantity type.
  *
@@ -80,7 +78,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Candelas = new Units(SIConverter, LibResource("measure.LuminousIntensity.Candela.sym"))
+  val Candelas = new Units(SIConverter, LibResource("LuminousIntensity.Candela.sym"))
 
   /**
    * Physical quantity family for luminous intensity measurements.

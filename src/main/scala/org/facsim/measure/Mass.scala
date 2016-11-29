@@ -33,8 +33,6 @@
  */
 package org.facsim.measure
 
-import org.facsim.LibResource
-
 /**
  * ''[[http://en.wikipedia.org/wiki/Mass Mass]]'' physical quantity type.
  *
@@ -74,7 +72,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Milligrams = new Units(new LinearScaleConverter(1.0e-6), LibResource("measure.Mass.Milligram.sym"))
+  val Milligrams = new Units(new LinearScaleConverter(1.0e-6), LibResource("Mass.Milligram.sym"))
 
   /**
    * Units for masses measured in ''[[http://en.wikipedia.org/wiki/Gram grams]]''.
@@ -83,7 +81,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Grams = new Units(new LinearScaleConverter(0.001), LibResource("measure.Mass.Gram.sym"))
+  val Grams = new Units(new LinearScaleConverter(0.001), LibResource("Mass.Gram.sym"))
 
   /**
    * Units for lengths measured in ''[[http://en.wikipedia.org/wiki/Kilogram kilograms]]''.
@@ -99,7 +97,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Kilograms = new Units(SIConverter, LibResource("measure.Mass.Kilogram.sym"))
+  val Kilograms = new Units(SIConverter, LibResource("Mass.Kilogram.sym"))
 
   /**
    * Units for masses measured in ''[[http://en.wikipedia.org/wiki/Tonne metric tonnes]]'' (also known as
@@ -109,7 +107,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Tonnes = new Units(new LinearScaleConverter(1000.0), LibResource("measure.Mass.Tonne.sym"))
+  val Tonnes = new Units(new LinearScaleConverter(1000.0), LibResource("Mass.Tonne.sym"))
 
   /**
    * Number of kilograms equivalent to one avoirdupois pound.
@@ -128,7 +126,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Pounds = new Units(new LinearScaleConverter(KilogramsPerPound), LibResource("measure.Mass.Pound.sym"))
+  val Pounds = new Units(new LinearScaleConverter(KilogramsPerPound), LibResource("Mass.Pound.sym"))
 
   /**
    * Units for masses measured in ''[[http://en.wikipedia.org/wiki/Ounce ounces]]''.
@@ -137,7 +135,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Ounces = new Units(new LinearScaleConverter(KilogramsPerPound / 16.0), LibResource("measure.Mass.Ounce.sym"))
+  val Ounces = new Units(new LinearScaleConverter(KilogramsPerPound / 16.0), LibResource("Mass.Ounce.sym"))
 
   /**
    * Physical quantity family for mass measurements.

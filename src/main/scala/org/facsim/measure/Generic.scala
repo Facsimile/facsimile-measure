@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.{assertNonNull, LibResource}
+import org.facsim.util.assertNonNull
 import scala.language.implicitConversions
 
 /**
@@ -208,7 +208,7 @@ extends Physical {
      */
     private[measure] def format(value: Measure): String = {
       assertNonNull(value)
-      LibResource("measure.Generic.Units.format", value.inUnits(self), value.family.baseSymbol)
+      LibResource("Generic.Units.format", value.inUnits(self), value.family.baseSymbol)
     }
   }
 }

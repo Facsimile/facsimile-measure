@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.{requireNonNull, LibResource}
+import org.facsim.util.requireNonNull
 import scala.language.implicitConversions
 
 /**
@@ -251,7 +251,7 @@ extends Physical  {
      * @return Formatted string, containing the value and the units (if any).
      */
     private[measure] final def format(value: Double) = {
-      LibResource("measure.Physical.Units.format", exportValue(value), symbol)
+      LibResource("Physical.Units.format", exportValue(value), symbol)
     }
   }
 }

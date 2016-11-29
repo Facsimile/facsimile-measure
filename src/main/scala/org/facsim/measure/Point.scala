@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.requireNonNull
+import org.facsim.util.requireNonNull
 
 /**
  * Represents a point in world space.

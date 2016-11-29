@@ -33,8 +33,6 @@
  */
 package org.facsim.measure
 
-import org.facsim.LibResource
-
 /**
  * ''[[http://en.wikipedia.org/wiki/Length Length]]'' physical quantity type.
  *
@@ -74,7 +72,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Millimeters = new Units(new LinearScaleConverter(0.001), LibResource("measure.Length.Millimeter.sym"))
+  val Millimeters = new Units(new LinearScaleConverter(0.001), LibResource("Length.Millimeter.sym"))
 
   /**
    * Units for lengths measured in ''[[http://en.wikipedia.org/wiki/Centimetre centimeters]]''.
@@ -83,7 +81,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Centimeters = new Units(new LinearScaleConverter(0.01), LibResource("measure.Length.Centimeter.sym"))
+  val Centimeters = new Units(new LinearScaleConverter(0.01), LibResource("Length.Centimeter.sym"))
 
   /**
    * Units for lengths measured in ''[[http://en.wikipedia.org/wiki/Metre meters]]''.
@@ -99,7 +97,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Meters = new Units(SIConverter, LibResource("measure.Length.Meter.sym"))
+  val Meters = new Units(SIConverter, LibResource("Length.Meter.sym"))
 
   /**
    * Units for lengths measured in ''[[http://en.wikipedia.org/wiki/Kilometre kilometers]]''.
@@ -108,7 +106,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Kilometers = new Units(new LinearScaleConverter(1000.0), LibResource("measure.Length.Kilometer.sym"))
+  val Kilometers = new Units(new LinearScaleConverter(1000.0), LibResource("Length.Kilometer.sym"))
 
   /**
    * Number of meters exactly equivalent to one inch.
@@ -127,7 +125,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Inches = new Units(new LinearScaleConverter(MetersPerInch), LibResource("measure.Length.Inch.sym"))
+  val Inches = new Units(new LinearScaleConverter(MetersPerInch), LibResource("Length.Inch.sym"))
 
   /**
    * Units for lengths measured in ''[[http://en.wikipedia.org/wiki/Foot_(unit) feet]]''.
@@ -136,7 +134,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Feet = new Units(new LinearScaleConverter(MetersPerInch * 12.0), LibResource("measure.Length.Foot.sym"))
+  val Feet = new Units(new LinearScaleConverter(MetersPerInch * 12.0), LibResource("Length.Foot.sym"))
 
   /**
    * Units for lengths measured in ''[[http://en.wikipedia.org/wiki/Yard yards]]''.
@@ -145,7 +143,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Yards = new Units(new LinearScaleConverter(MetersPerInch * 36.0), LibResource("measure.Length.Yard.sym"))
+  val Yards = new Units(new LinearScaleConverter(MetersPerInch * 36.0), LibResource("Length.Yard.sym"))
 
   /**
    * Units for lengths measured in ''[[http://en.wikipedia.org/wiki/Mile miles]]''.
@@ -154,7 +152,7 @@ extends Specific {
    *
    * @since 0.0
    */
-  val Miles = new Units(new LinearScaleConverter(MetersPerInch * 63360.0), LibResource("measure.Length.Mile.sym"))
+  val Miles = new Units(new LinearScaleConverter(MetersPerInch * 63360.0), LibResource("Length.Mile.sym"))
 
   /**
    * Physical quantity family for length measurements.

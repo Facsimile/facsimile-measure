@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.{requireFinite, requireValid}
+import org.facsim.util.{requireFinite, requireValid}
 
 /**
  * Linear converter.

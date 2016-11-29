@@ -33,8 +33,6 @@
  */
 package org.facsim.measure
 
-import org.facsim.LibResource
-
 /**
  * ''[[http://en.wikipedia.org/wiki/Time_in_physics Time]]'' physical quantity type.
  *
@@ -74,7 +72,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Milliseconds = new Units(new LinearScaleConverter(0.001), LibResource("measure.Time.Millisecond.sym"))
+  val Milliseconds = new Units(new LinearScaleConverter(0.001), LibResource("Time.Millisecond.sym"))
 
   /**
    * Units for time measured in ''[[http://en.wikipedia.org/wiki/Second seconds]]''.
@@ -90,7 +88,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Seconds = new Units(SIConverter, LibResource("measure.Time.Second.sym"))
+  val Seconds = new Units(SIConverter, LibResource("Time.Second.sym"))
 
   /**
    * Units for time measured in ''[[http://en.wikipedia.org/wiki/Minute minutes]]''.
@@ -99,7 +97,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Minutes = new Units(new LinearScaleConverter(60.0), LibResource("measure.Time.Minute.sym"))
+  val Minutes = new Units(new LinearScaleConverter(60.0), LibResource("Time.Minute.sym"))
 
   /**
    * Units for time measured in ''[[http://en.wikipedia.org/wiki/Hour hours]]''.
@@ -108,7 +106,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Hours = new Units(new LinearScaleConverter(60.0 * 60.0), LibResource("measure.Time.Hour.sym"))
+  val Hours = new Units(new LinearScaleConverter(60.0 * 60.0), LibResource("Time.Hour.sym"))
 
   /**
    * Units for time measured in ''[[http://en.wikipedia.org/wiki/Day days]]''.
@@ -117,7 +115,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Days = new Units(new LinearScaleConverter(60.0 * 60.0 * 24.0), LibResource("measure.Time.Day.sym"))
+  val Days = new Units(new LinearScaleConverter(60.0 * 60.0 * 24.0), LibResource("Time.Day.sym"))
 
   /**
    * Units for time measured in ''[[http://en.wikipedia.org/wiki/Week weeks]]''.
@@ -130,7 +128,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Weeks = new Units(new LinearScaleConverter(60.0 * 60.0 * 24.0 * 7.0), LibResource("measure.Time.Week.sym"))
+  val Weeks = new Units(new LinearScaleConverter(60.0 * 60.0 * 24.0 * 7.0), LibResource("Time.Week.sym"))
 
   /**
    * Physical quantity family for time measurements.

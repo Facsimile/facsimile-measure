@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.requireValid
+import org.facsim.util.requireValid
 
 /**
  * Abstract base class for all physical quantity types that cannot have negative measurement values in the associated

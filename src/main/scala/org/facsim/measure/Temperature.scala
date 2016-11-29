@@ -33,8 +33,6 @@
  */
 package org.facsim.measure
 
-import org.facsim.LibResource
-
 /**
  * ''[[http://en.wikipedia.org/wiki/Temperature Temperature]]'' physical quantity type.
  *
@@ -74,7 +72,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Celsius = new Units(new ConstantConverter(-273.15), LibResource("measure.Temperature.Celsius.sym"))
+  val Celsius = new Units(new ConstantConverter(-273.15), LibResource("Temperature.Celsius.sym"))
 
   /**
    * Units for temperatures measured in ''[[http://en.wikipedia.org/wiki/Fahrenheit degrees Fahrenheit]]''.
@@ -84,7 +82,7 @@ extends NonNegative {
    * @since 0.0
    */
   val Fahrenheit = new Units(new LinearConverter(5.0 / 9.0, -(32.0 * 5.0 / 9.0) - 273.15),
-  LibResource("measure.Temperature.Fahrenheit.sym"))
+  LibResource("Temperature.Fahrenheit.sym"))
 
   /**
    * Units for temperatures measured in ''[[http://en.wikipedia.org/wiki/Kelvin degrees Kelvin]]''.
@@ -100,7 +98,7 @@ extends NonNegative {
    *
    * @since 0.0
    */
-  val Kelvin = new Units(SIConverter, LibResource("measure.Temperature.Kelvin.sym"))
+  val Kelvin = new Units(SIConverter, LibResource("Temperature.Kelvin.sym"))
 
   /**
    * Physical quantity family for temperature measurements.

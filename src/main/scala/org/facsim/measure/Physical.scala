@@ -33,7 +33,7 @@
  */
 package org.facsim.measure
 
-import org.facsim.{requireNonNull, requireFinite}
+import org.facsim.util.{requireNonNull, requireFinite}
 
 /**
  * Abstract base class for all ''Facsimile [[http://en.wikipedia.org/wiki/Physical_quantity physical quantity]]''
