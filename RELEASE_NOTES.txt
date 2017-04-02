@@ -1,4 +1,0 @@
-Facsimile Measure ${version} Release Notes
-=====================================
-
-TODO
